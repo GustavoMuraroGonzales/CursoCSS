@@ -8,3 +8,10 @@
   .mark { /*utilizado somente para destacar a frase obs:sem os -.*/
     background-color:#00FF00;
   }
+  .center {
+    text-align: center;
+  }
+
+  #exemplo {
+    background-color: #ccc;
+  }

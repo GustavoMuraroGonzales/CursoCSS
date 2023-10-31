@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores e Classes</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Seletores e Classes</h1>
+    </div>
+    <div>
+        <p>
+            Temos alguns tipos de Seletores e Classes como :<br>
+            <ul>
+                <li>body</li>
+                body é um seletor onde podemos controlar todas as propriedades css de nosso site, assim colocando a cor de fundo geral que queremos dentre outras opções.<br>
+                Usamos ele da seguinte maneira:<br>
+                <p id="exemplo" class="center">estilo.css</p>
+                <pre><code> 
+     body {
+            background-color: red;
+     }<br></code></pre>
+                Assim mudando a cor do fundo de toda a página.
+                <hr>
+                <li>class</li>
+                class é uma classe, toda tag que colocamos uma class nela, colocamos um localizador onde podemos adicionar um código css nessa classe, assim adicionado ela em uma tag automaticamente já seria formatado da maneira que eu fiz a class na página css.<br>
+                São comportamentos padrões que podemos utilizar ao longo de nosso código.<br>
+                Podemos pré estabelecer padrões<br>
+                Obs:Nunca deve se começar com um numero.<br>
+                É acumulativa, podemos colocar varias class achamos necessário em nossas tag's<br>
+                Podemos usar como demonstra o exemplo abaixo:<br><br>
+                    <p id="exemplo" class="center">Index.html</p>
+                <pre><code>
+        <-div class="title">
+            <-h1>Seletores e Classes<-/h1>
+        <-/div>
+                </code></pre>
+                    <p id="exemplo" class="center">estilo.css</p>
+                <pre><code>
+        .title {
+            color:red;
+            text-align: center;
+        }
+                </code></pre>
+                Assim podemos alterar somente a tag seleciona, semelhente o nosso titulo.
+                <hr>
+                <li>id</li>
+                id é um seletor onde damos um nome para determindada tag, assim alteramos somente ela, e podemos localiza=la.<br>
+                Cada identificador é sempre único.<br>
+                Obs:Nunca deve se começar com um numero.<br>
+                Podemos analisar o exemplo a seguir:<br>
+                <p id="exemplo" class="center">Index.html</p>
+                <pre><code>
+        <-p id="exemplo" class="center">Index.html<-/p>
+                </code></pre>
+                <p id="exemplo" class="center">estilo.css</p>
+                <pre><code>
+        #exemplo {
+            background-color: #ccc;
+        }
+                </code></pre>  
+            </ul>
+        </p>
+    </div>
+
+
+
+<hr>
+    <a href="index.html">Voltar para a página Inicial</a>
+<hr>
+</body>
+</html>
