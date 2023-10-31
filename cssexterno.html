@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Externo</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>CSS Externo</h1>
+    <div class="title">
+        <h1>CSS Externo</h1>
+    </div>
+    <p>
+        Considerado um dos modos mais produtivos e de melhor leitura do código CSS.<br>
+        Nós podemos adicionar várias páginas usando somente uma página de estilo.css, utilizando o a tag de rastreio no head de cada página, igual demonstro no exemplo abaixo:<br>
+        <pre>
+        <code>
+        <-head>
+            <-link rel="stylesheet" href="estilo.css">
+                                             |-> (endereço de sua página CSS).
+        <-/head>
+        </pre>
+        </code> 
+        <mark class="mark"><sup class="mark">obs:</sup>Sem os -.</mark><br>
+    </p>
+    <p>
+        E o nosso código na página estilo.css ficou assim:<br>
+    <pre>
+    <code>
+        * {
+            background-color: antiquewhite;
+        }
+        .title {
+            color:red;
+            text-align: center;
+        }
+        .mark { /*utilizado somente para destacar a frase obs:sem os -.*/
+            background-color:#00FF00;
+        }
+
+    </code>
+    </pre>        
+    </p>
+    <hr>
+    <a href="index.html">Voltar para a página Inicial</a>
+    <hr>
 </body>
 </html>

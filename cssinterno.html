@@ -3,7 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CSS Interno</title>
+    <style>
+      *{
+        background-color: antiquewhite;
+      }
+      .title {
+        color:red;
+        text-align: center;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="title">
+        <h1>CSS Interno</h1>
+    </div>
+    <p> É quando damos instruções CSS no ínicio de nosso código, quando criamos uma tag Style dentro da tag head, então ali colocamos os nosso comandos de propriedades de CSS.<br>
+        Sempre lembrando do nível de prioridade que é:<br>
+        <ol>
+          <li>Inline;</li>
+          <li>Interno;</li>
+          <li>Externo.</li>
+        </ol>
+    <p> 
+       Como demonstro no código abaixo, um exemplo de nossa página inicial:<br>
+       <pre>
+        <code>
+       <-head>
+       <-style>
+        *{
+             box-sizing: border-box;
+         }
+         body{
+             margin: 0;
+         }
+        .menu{
+             background-color: #333;
+             overflow: hidden;
+             border-radius: 30px;
+         }
+        .menu a{
+             color:white;
+             padding:7px 10px;
+             float: left;
+             display:block;
+             text-decoration: none;
+         }
+        .topo {
+             background-color: antiquewhite;
+             padding: 30px;
+             text-align: center;
+         }
+        .topo h1{
+             font-size: 50px;
+         }
+        .paragrafo1 {
+             background-color: antiquewhite;
+             text-align: center;
+             padding: 5px;
+         }
+       <-/style>
+       <-/head>
+        </code>
+      </pre>
+    </p>
+  <br>
+  <hr>
+    <a href="index.html">Voltar para a página Inicial</a>
+  <hr>
+  </body>
 </html>

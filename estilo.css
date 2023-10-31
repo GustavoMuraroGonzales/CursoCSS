@@ -1,0 +1,10 @@
+*{
+    background-color: antiquewhite;
+  }
+  .title {
+    color:red;
+    text-align: center;
+  }
+  .mark { /*utilizado somente para destacar a frase obs:sem os -.*/
+    background-color:#00FF00;
+  }
