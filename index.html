@@ -4,117 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina aprender CSS</title>
-    <style>
-       *{
-            box-sizing: border-box;
-        }
-        body{
-            margin: 0;
-            background-color: antiquewhite;
-        }
-      .menu{
-        background-color: #333;
-        overflow: hidden;
-       
-      }
-      .menu a{
-        color:white;
-        padding:15px 49px;
-        float: left;
-        display:block;
-        text-decoration: none;
-        text-align: center;
-        font-size: 16px;
-      }
-     .topo {
-        background-color: antiquewhite;
-        padding: 30px;
-        text-align: center;
-     }
-     .topo h1{
-      font-size: 50px;
-     }
-     .paragrafo1 {
-        background-color: antiquewhite;
-        text-align: center;
-        padding: 5px;
-     }
-     .title_menu {
-        background-color: #333;
-        overflow: hidden;
-        border-radius: 30px;
-     }
-     .title_menu h4 {
-        color:white;
-        display:block;
-        text-decoration: none;
-        text-align: center;
-        font-size: 16px;
-     }
-     .title_menu_2 {
-        background-color:midnightblue;
-        overflow: hidden;
-        border-radius: 30px;
-        padding: 6px;
-      }
-      .title_menu_2 h2 {
-        color:white;
-        display:block;
-        text-decoration: none;
-        text-align: center;
-        font-size: 20px;
-      }
-      .menu_2 {
-        background-color:midnightblue;
-        overflow: hidden;
-       
-      }
-      .menu_2 a{
-        color:white;
-        padding:15px 55px;
-        float: left;
-        display:block;
-        text-decoration: none;
-        text-align: center;
-        font-size: 16px;
-      }
-    </style>
     <link rel="shortcut icon" type="imagex/png" href="./img/css (2).png">
+    <link rel="stylesheet" href="propriedades/estilo_pro.css"
   </head>
 
   <body>
     <div class="topo">
-      <h1 >Meu segundo Site?</h1>
+      <h1 class="center c_red">Meu segundo Site?</h1>
     </div>
-
-    <div class="paragrafo1">
-      <p>
-        CSS o que é?.
-      </p>
-    </div>
-    <div class="title_menu">
-        <h4>Menu Tipos de CSS.</h4>
-    </div>
-    <div class="menu">
+    <div class="dropdown">
+      <button class="mainmenubtn">Tipos de Montagem CSS</button>
+    <div class="dropdown-child">
       <a href="cssinline.html">Css Inline</a>
       <a href="cssinterno.html">Css Interno</a>
       <a href="cssexterno.html">Css Externo</a>
     </div>
-    <br>
-    <div class="title_menu_2">
-        <h2>Menu Propriedades CSS</h2>
     </div>
-    <div class="menu_2">
-      <a href="seletore_e_classes.html"><strong>Seletores e Classes</strong></a>
-      <a href="/propriedades/menu_propriedades.html"><strong>Propriedades</strong></a>
-      <a href="seletore_e_classes.html"><strong>Seletores e Classes</strong></a>
-      <a href="seletore_e_classes.html"><strong>Seletores e Classes</strong></a>
-      <a href="seletore_e_classes.html"><strong>Seletores e Classes</strong></a>
-      <a href="seletore_e_classes.html"><strong>Seletores e Classes</strong></a>
-      <a href="seletore_e_classes.html"><strong>Seletores e Classes</strong></a>
-      <a href="seletore_e_classes.html"><strong>Seletores e Classes</strong></a>
-      <a href="seletore_e_classes.html"><strong>Seletores e Classes</strong></a>
-      <a href="seletore_e_classes.html"><strong>Seletores e Classes</strong></a>
+    <br>
+    <div class="dropdown">
+        <button class="mainmenubtn">Propriedades CSS</button>
+    <div class="dropdown-child">
+      <a href="/propriedades/color.html">Color</a>
+      <a href="/propriedades/background.html">Background</a>
+      <a href="/propriedades/border.html">Border</a>
+      <a href="/propriedades/margin.html">Margin</a>
+      <a href="/propriedades/padding_e_botao.html">Padding e Botão</a>
+      <a href="/propriedades/width_e_height.html">Width e Height</a>
+      <a href="/propriedades/pro_text.html">Text</a>
+      <a href="/propriedades/pro_font.html">Font</a>
+      <a href="/propriedades/pro_display.html">Display</a>
+      <a href="/propriedades/pro_max-width.html">Max-Width</a>
+      <a href="/propriedades/pro_position.html">Position</a>
+      <a href="/propriedades/pro_overflow.html">Overflow</a>
+      <a href="/propriedades/pro_float.html">Float</a>
+      <a href="/propriedades/pro_opacity.html">Opacity</a>
+      <a href="/propriedades/pro_txtshadow_boxshadow.html">Text Shadow e Box Shadow</a>
+      <a href="/propriedades/menu_propriedades.html">Todas</a>
+    </div>
+    </div>
+    <br>
+    <div class="dropdown">
+      <button class="mainmenubtn">Seletores e Classes</button>
+      <div class="dropdown-child">
+        <a href="seletore_e_classes.html">Seletores e Classes</a>
+      </div>
     </div>
   </body>
 </html>
