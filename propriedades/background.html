@@ -6,9 +6,36 @@
     <title>Propriedade Background</title>
     <link rel="stylesheet" href="/propriedades/estilo_pro.css">
 </head>
-<body>
+<body >
     <h1 class="center c_red">Propriedade Background</h1>
-
+    <p>Podemos utilizar isso para enfeitar a nossa página HTML. background é o fundo de nossa imagem podendo colocar uma cor sólida ou podemos utilizar um propriedade chamada background-image assim podendo colocar uma imagem de fundo. Podemos assim colocar em toda a nossa página, como tambem podemos colocar ela de um tamanho que nós necessitamos, para tal usamos width e height.<br>
+       Sempre lembrando da hierarquia do css, para que não tenha nenhum bug em nosso site.<br> 
+       As tag's de background são :<br><hr>
+       <p id="exemplo" class="center">estilo.css</p>
+       <pre><code>
+background-color: gray;<br>
+background-image:url(../img/fotoexemplo.jpg);<br>
+background-size:cover or contain; (cover é para adaptar a imagem 
+            automaticamente, contain ele copia a imagem para 
+                    completar todo o espaço da página).<br>
+background-repeat: no-repeat or repeat or repeat-y or x;(podemos 
+        colocar a magem para repetir ou podemos coloar para não 
+        repetir assim deixando ela em seu tamanho original.)<br>
+background-position: "escolhemos"; (podemos colocar uma 
+            posição em nossa imagem assim centralizando ela 
+        corretamente, colocando ela para direita, esquerda, 
+            cima, baixo ou qualquer posição que quisermos).<br>
+        </code></pre><hr>
+       Podemos colocar todas essas propriedade em uma só assim deixando o nosso código menor, um exemplo:<br>
+       <p id="exemplo" class="center">estilo.css</p>
+       <pre><code>
+    background: gray url(../img/fotoexemplo.jpg) center ;<br>
+        </code></pre>
+       Na prática nosso exemplo acima ficaria assim:<br>
+        <div class="exemplo_back">
+          
+        </div>
+    </p>
 
 <hr>
 <a href="../index.html">Voltar para a página Inicial</a>

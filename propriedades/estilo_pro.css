@@ -4,6 +4,10 @@
 .c_red {
     color: red;
 }
+.exemplo_back {
+    padding: 100px;
+    background: gray url(../img/fotoexemplo.jpg) center ;
+}
 body {
     background-color: antiquewhite;
 }
