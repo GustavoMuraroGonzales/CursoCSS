@@ -7,10 +7,131 @@
     <link rel="stylesheet" href="estilo_pro.css">
 </head>
 <body>
-    <h1 class="center c_red"></h1>
+    <h1 class="center c_red">Propriedade Text</h1>
+    <p>
+        Nós temos várias tag's onde podemos mexer em nosso texto, agora iremos aprender um pouco sobre elas.<br>
+        <h3>text-align</h3>
+        Nós temos muitos tipos de text-align, assim sendo os mais utilziados os seguintes:<br>
+        <pre><code>
+            text-align:center; (Centraliza ao centro)<br>
+            exemplo:<br>
+            <p class="textcenter">Exemplo texto ao centro.</p>
+            <hr>
+        </code></pre>
+        <pre><code>
+            text-align:justify; (deixa quadrado todos os cantos)<br>
+            exemplo:<br>
+        </code></pre>
+            <p class="textjustify">Exemplo texto justificado (justify) para melhorar a visualiza os paragrados abaixo estarão em justify.</p>
+            <p class="textjustify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, at accusantium provident reiciendis deserunt quos voluptates architecto veniam nulla. Minus eos aliquid, voluptas dicta suscipit est culpa dolorum architecto atque?
+            </p>
+            <hr>
+        <pre><code>
+            text-align:left; (Corrige o texto para a esquerda)<br>
+            exemplo:<br>
+            <p class="textleft">Exemplo texto a esquerda.</p>
+            <hr>
+        </code></pre>
+        <pre><code>
+            text-align:right; (Corrige o texto para a direita)<br>
+            exemplo:<br>
+            <p class="textright">Exemplo texto a direita.</p>
+            <hr><hr>
+        </code></pre>
+        <h3>direction e unicode-bidi</h3>
+        Nessa tag podemos colocar o nosso texto ao contrário, usamos mais quando tem os texto em outro idiomas que se coloca ao contrário, podemos ver a seguir:<br>
+        <pre><code>
+            direction:rtl; (nosso texto fica da direita para a 
+                                                    esquerda)
+            unicode-bidi:bidi-override; (deixa o nosso texto de
+                                        trás para a frente)                                       
 
-<hr>
-<a href="../index.html">Voltar para a página Inicial</a>
-<hr>
+        <p class="exemplodirection">Exemplo Direction rtl</p>
+        </code></pre>
+        <hr><hr>
+        <h3>text-decoration</h3>
+        Utilizamos bastante essa tag em links para podermos tirar a linha que fica abaixo dela.<br>
+        Podemos usar o text-decoretion da seguinte maneira:<br>
+        <pre><code>
+            text-decoration:none; (retiramos a linha a baixo do 
+                                                            link)
+            exemplo: 
+        </code></pre>
+        <a class="txtdecorationnone" href="teste.html">Link para página de teste</a>
+        <hr>
+        <pre><code>
+            text-decoration:overline (Coloca uma linha sobre 
+                                        o nosso texto)
+            exemplo:
+        </code></pre>
+        <p class="txtdecorationoverline">Exemplo text-decoration:overline.</p>
+        <hr>
+        <pre><code>
+            text-decoration:line-through (Faz o efeito de riscado 
+                                        em todo o nosso componente)
+            exemplo:
+        </code></pre>
+        <p class="txtline">Exemplo text-decoration:line-through.</p>
+        <hr>
+        <pre><code>
+            text-decoration:underline (Faz a linha embaixo de 
+                                    nosso texto, como os links)
+            exemplo:
+        </code></pre>
+        <p class="txtunderline">Exemplo text-decoration:underline</p>
+        <hr><hr>
+        <h3>text-transform</h3>
+        Utilizamos para trasnformar todo o conteudo de nosso paragrafo de uma vez só. Um exemplo para colocarmos todo o nossoparágrafo em letra maiúscula.
+        <pre><code>
+            text-transform:capitaliza; (coloca todas as primeira
+                        letras das palavras com letra maiúsculas.)
+            exemplo:
+        </code></pre>
+        <p class="txttransfcap">Exemplo text-transform: capitaliza, coloca a primeira letra em maiúsculo</p>
+        <hr>
+        <pre><code>
+            texte-transforme:uppercase; (coloca tudo em maiúsculo)
+            exemplo:
+        </code></pre>
+        <p class="txttransfupper">Exemplo de text-trasnform: uppercase.</p>
+        <hr>
+        <pre><code>
+            text-transform:lowercase; (Coloca tudo em minúsculo)
+            exemplo:
+        </code></pre>
+        <p class="txttransflower">Exemplo de text-transform: lowercase.</p>
+        <hr><hr>
+        <h3>text-indent</h3>
+        Serve para recuar a primeira linha do texto.
+        exemplo:
+        <pre><copde>
+            texte-indent:"quantidade"px;
+            exemplo:
+        </copde></pre>
+        <p class="txtindent">Essa paragrafo é para o exemplo do text-indent que da um espaço na primeira linah do parágarfo.</p>
+        <hr><hr>
+        <h3 class="letterspacing">letter-spacing</h3>
+        Utilizamos para colocar espaçamento entre as letras em meu parágrafo. Podemos colocar negativo tambem, podendo deixar as nossa letras mais grudadas
+        exemplo:
+        <p class="letterspacing">Parágrafo de exemplo para vermos como funciona o letter-spacing.</p>
+        <hr><hr>
+        <h3>line-height</h3>
+        Espaçamento entre as linhas. Colocamos normalmente em casa decimais, como exmeplo: 0.5 ; 0.6 <br>
+        exemplo:
+        <p class="lineheight">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quam fugiat, id laborum consectetur distinctio nobis dolor expedita molestias tempora deleniti omnis iure ipsum voluptate atque, amet necessitatibus error assumenda.</p>
+        <hr><hr>
+        <h3>word-spacing</h3>
+        Utilizamos para colcoar espaçamento entre as palavras.<br>
+        exemplo:
+        <p class="wordspacing">Exemplo do uso da propriedade do word-spacing.</p>
+    </p>
+    
+<hr><hr>
+    <br><br><br>
+<a  class="botao_inicial center" href="../index.html">VOLTAR INICIO
+    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg> 
+</a>
 </body>
 </html>
