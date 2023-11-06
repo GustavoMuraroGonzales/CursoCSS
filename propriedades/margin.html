@@ -8,7 +8,55 @@
 </head>
 <body>  
     <h1 class="center c_red">Propriedade Margin</h1>
-
+    <p>
+        A margin serve para dar um espaço em branco em algum lado do elemento, sendo ele qualquer lado.<br>
+        Essas tag's se escrevem da seguinte maneira:
+        <p id="exemplo" class="center">estilo.css</p>
+        <pre><code>
+            margin-(posição): "quantidade"px/%.
+        </code></pre>
+        Um exemplo:
+        <p id="exemplo" class="center">estilo.css</p>
+        <pre><code>
+            .exemplo_margin {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 200px;
+                margin-right: 10px;
+                border: 4px solid red;
+                color:aliceblue;
+                border-radius: 30px;
+                border: 4px solid red;
+                background-color: #333;
+                text-align: center;
+                font-size: 15px;
+            }
+        </code></pre>
+        <p id="exemplo" class="center">index.html</p>
+        <pre><code>
+        <-h4 class="exemplo_margin">Exemplo Margin<-/h4>
+        </code></pre>
+        <h4 class="exemplo_margin">Exemplo Margin</h4>
+        <hr>
+        Tambem Podemos colocar tudo em uma linha assim, encurtando o nosso código, como o exemplo abaixo:
+        <p id="exemplo" class="center">estilo.css</p>
+        <pre><code>
+        .exemplo_margin_all {
+            margin: 30px(top) 200px(right) 30px(bottom) 50px;(left)
+            border: 4px solid red;
+            color:aliceblue;
+            border-radius: 30px;
+            background-color: #333;
+            text-align: center;
+            font-size: 15px;
+        }
+        </code></pre>
+        <p id="exemplo" class="center">index.html</p>
+        <pre><code>
+    <-h4 class="exemplo_margin_all">Exemplo Margin All<-/h4>
+        </code></pre>
+        <h4 class="exemplo_margin_all">Exemplo Margin All</h4>
+    </p>
 <hr>
 <a href="../index.html">Voltar para a página Inicial</a>
 <hr>
