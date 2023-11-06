@@ -8,10 +8,89 @@
 </head>
 <body>
     <h1 class="center c_red">Propriedade Font</h1>
+    <p>
+        Na propriedade font podemos alterar as fontes de nosso site tambem podemos mudar o tamanho da fonte, assim deixando o nosso site mais bonito e tambem, de uma maneira melhor de se ler.<br>
+        <hr>
+        <h3>font-family</h3>
+        Posso alterar a fonte de meu parágrafo usando as fontes padrões que a maioria dos navegadores aceitam. Acessamos e selecionamos essas fontes da seguinte maneira:<br>
+        Utilizamos a tag: font-family: e selecionamos a fonte que desejamos usar.<br>
+        Vamos alterar a fonte do parágrafo abaixo:<br>
+        <p class="font1">Exemplo de alteração de fonte</p>
+        Como fizemos:<br>
+        <p id="exemplo" class="center">Index.html</p>
+        <pre><code>
+            <-p class="font1">Exemplo de alteração de fonte<-/p>
+        </code></pre>
+        <p id="exemplo" class="center">estilo.css</p>
+        <pre><code>
+            .font1 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            } 
+        </code></pre>
+        <hr><hr>
+        <h3>font-size</h3>
+        Com essa Tag podemos alterar o tamanho de nossa font de nossa aplicação.
+        Vamos alterar o tamanho da fonte do parágrafo abaixo:
+        <p class="fontsize">Esse parágrafo é um exemplo de mudança do tamanho fonte.</p>
+        Como foi feito:<br>
+        <p id="exemplo" class="center">Index.html</p>
+        <pre><code>
+            <-p class="fontsize">Esse parágrafo é um exemplo 
+                            de mudança do tamanho fonte.<-/p>
+        </code></pre>
+        <p id="exemplo" class="center">estilo.css</p>
+        <pre><code>
+            .fontsize {
+                font-size: 25px;
+            }
+        </code></pre>
+        <hr><hr>
+        <h3>Como podemos pegar uma fonte externa para colocar em meu site?</h3>
+        Para isso usaremos o <a href="https://fonts.google.com/" target="_blank">Google fonts</a>, que permite utilizarmos fonts livre de direito autorais.<br>
+        Para fazer isso escolhemos a fonte que desejamos usar e copiamos o código de import e colamos na primeira linha de nosso arquivos estile.css e copiamos o font-family deixado logo embaixo e colamos no lugar em que queremos utilizar como mostra o nosso exemplo abaixo:<br>
+        <p class="fontchange">Alteramos a fonte desse parágrafo para usar como exemplo.</p>
+        Fizemos da seguinte maneira:<br>
+        <p id="exemplo" class="center">Index.html</p>
+        <pre><code>
+        <-p class="fontchange">Alteramos a fonte desse parágrafo 
+                                    para usar como exemplo.</p>
+        </code></pre>
+        <p id="exemplo" class="center">estilo.css</p>
+        <pre><code>
+         @import url('https://fonts.googleapis.com/css2?family=Young
+                                            +Serif&display=swap');
+            ...
+        .fontchange {
+             font-family: 'Young Serif', serif;
+        }
+        </code></pre>
+        <hr><hr>
+        <h3>font-style</h3>
+        Usamos essa propriedade para colocarmos um estilo em nosso site como fonte italico, obliquo.
+        Podemos ver no seguinte exemplo:
+        <p class="fontchange fontstyle">Alteramos o estilo desse parágrafo para usar como exemplo.</p>
+        <hr><hr>
+        <h3>font-weight</h3>
+        Usamos essa propriedade para aumentarmos a grossura de nossa fonte, assim podendo deixar ela em negrito, sem necessáriamente adicionarmos um código em HTML.
+        Um exemplo:
+        <p class="fontchange fontweight">Alteramos a grossura desse parágrafo para usar como exemplo.</p>
+        Feito da Seguinte Maneira:<br>
+        <p id="exemplo" class="center">Index.html</p>
+        <pre><code>
+            <-p class="fontchange fontweight">Alteramos a grossura 
+                    desse parágrafo para usar como exemplo.<-/p>
+        </code></pre>
+        <p id="exemplo" class="center">estilo.css</p>
+        <pre><code>
+            .fontweight {
+                font-weight: bold;
+            }
+        </code></pre>
+        </p>
 
-
-<hr>
-<a href="../index.html">Voltar para a página Inicial</a>
-<hr>
+<br><br>
+<a  class="center botao_inicial" href="../index.html">VOLTAR INICIO
+    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg> 
+</a>
 </body>
 </html>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 .center {
     text-align: center;
 }
@@ -185,4 +186,20 @@ body {
 }
 .wordspacing {
     word-spacing: 15px;
+}
+.font1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fontsize {
+    font-size: 25px;
+}
+.fontchange {
+    font-family: 'Young Serif', serif;
+}
+.fontstyle {
+    font-style: italic;
+}
+.fontweight {
+    font-weight: bold;
+    font-size: 20px;
 }
