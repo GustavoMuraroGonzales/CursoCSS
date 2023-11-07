@@ -137,7 +137,7 @@ a.botao_inicial {
 }
 .botao_inicial:hover{
     background-color: #575555;
-    padding: 4%;
+    padding: 2%;
 }
 .textcenter {
     text-align: center;
@@ -252,4 +252,58 @@ a.btexemplo5 {
 h2 {
     display:inline;
     border: 1px solid red;
+}
+.exmax1 {
+    border: 1px solid red;
+    width:800px;
+}
+.exmax2 {
+    border: 1px solid blue;
+    max-width: 800px;
+}
+.bt_pag_anetrior {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    align-self: center;
+    width: 150px;
+    text-align: center;
+    float:left;
+    margin-left: 35px;
+}
+
+.bt_prox_pag {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+    margin-right: 35px;
+    float: right;
+} 
+.bt_pag_anetrior:hover {
+    background-color: #575555;
+    padding: 4%;
+}
+.bt_prox_pag:hover {
+    background-color: #575555;
+    padding: 4%; 
+}
+a.botao_inicial2 {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    align-self: center;
+    display:block;
+    width: 200px;
+}
+.botao_inicial2:hover{
+    background-color: #575555;
+    padding: 5%;
 }
