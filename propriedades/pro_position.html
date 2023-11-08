@@ -14,10 +14,236 @@
         Por padrão nossas tags já vem com o static.<br><br>
         <hr><hr>
         <h4>Realative</h4>
-        Utilizamos para fazer sobreposições em nossa aplicações, pois a nossa tag selecionada com o position relative ela só poderá ficar no lugar em que selecionamos e cada tag que selecionarmos com isso poderemos colocar um peso de sobreposição nela como podemos ver o exemplo abaixo:<br>
-
+        Utilizamos para fazer sobreposições em nossa aplicações, pois a nossa tag selecionada com o position relative ela só poderá ficar no lugar em que selecionamos e cada tag que selecionarmos com isso poderemos colocar um peso de sobreposição nela como podemos ver o exemplo abaixo:<br> 
+        O posicinamento do elemento relativo aonde ele está posicionado. Relativo ao ponto em que ele está podemos alterar o seu posicionaento, um exmeplo de uso seria para fazer uma sobreposição.<br>
+        <br>Um exemplo:<br>
+        <div class="excontainer">
+            <div class="exdiv1">Primeira Div</div>
+            <div class="exdiv2">Segunda Div</div>
+            <div class="exdiv3">Terceira Div</div>
+        </div>
+        <br>Como fiz:<br>
+        <p id="exemplo" class="center">Index.html</p>
+        <pre><code>
+            <-div class="excontainer">
+                <-div class="exdiv1">Primeira Div<-/div>
+                <-div class="exdiv2">Segunda Div<-/div>
+                <-div class="exdiv3">Terceira Div<-/div>
+            <-/div>
+        </code></pre>
+        <p id="exemplo" class="center">estilo.css</p>
+        <pre><code>
+    .excontainer {
+        background-color: blue;
+        width: 100%;
+        height: 180px;
+        display: inline-block;
+    }
+    .exdiv1 {
+        position: relative;
+        left: 55px; (quntidade deslocada)
+        top: 25px; (quntidade deslocada)
+        width: 25%;
+        height: 100px;
+        background-color: yellow;
+        display: inline-block;
+        z-index: 1; (nivel de aparição camada) 
+                        (mais baixo)
+    }
+    .exdiv2 {
+        position: relative;
+        width: 25%; 
+        height: 100px; 
+        background-color: green;
+        display: inline-block;
+        z-index: 2; (nivel de aparição camada)
+    }
+    .exdiv3 {
+        position: relative;
+        right: 55px; (quntidade deslocada)
+        top: 25px; (quntidade deslocada)
+        width: 25%;
+        height: 100px;
+        background-color: red;
+        display: inline-block;
+        z-index: 4; (nivel de aparição camada)
+                            (mais alto)
+    }
+        </code></pre>
+    O z-index é usado para colcarmos camada em nossa alicação, sendo assim nós podemos colocar um valor de -99 ou 999. Assim tendo a possibilidade de colocar várias camadas em nosso site.
+    <hr><hr>
+    <h4>fixed</h4>
+    Uma propriedade que deixa o nosso item fixado em uma posição que nós queremos, independende da rolagem de nossa página ele vai ficar fixo sempre no mesmo lugar.<br>
+    Um exemplo temos esse item no canto inferior direito de nossa tela, que nos leva a nossa página de teste.<br>
+    <br>Como foi feito:<br>
+    <a  class="exfixed" href="teste.html">
+        <svg id="Layer_1" height="32" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m14 7v-6.54a6.977 6.977 0 0 1 2.465 1.59l3.484 3.486a6.954 6.954 0 0 1 1.591 2.464h-6.54a1 1 0 0 1 -1-1zm8 3.485v8.515a5.006 5.006 0 0 1 -5 5h-10a5.006 5.006 0 0 1 -5-5v-14a5.006 5.006 0 0 1 5-5h4.515c.163 0 .324.013.485.024v6.976a3 3 0 0 0 3 3h6.976c.011.161.024.322.024.485zm-8 8.515a1 1 0 0 0 -1-1h-5a1 1 0 0 0 0 2h5a1 1 0 0 0 1-1zm3-4a1 1 0 0 0 -1-1h-8a1 1 0 0 0 0 2h8a1 1 0 0 0 1-1z"/></svg>   
+    </a>
+    <p id="exemplo" class="center">Index.html</p>
+    <pre><code>
+        <-a  class="exfixed" href="teste.html">
+            <- svg "sua svg"><-/svg>   
+        <-/a>
+    </code></pre>
+    <mark><sup>obs:</sup>Sem os -.</mark><br>
+    <p id="exemplo" class="center">estilo.css</p>
+    <pre><code>
+        .exfixed {
+            position: fixed;
+            bottom: 15px;
+            right: 0;
+            width: 300px;
+        }
+    </code></pre>
+    <hr><hr>
+    <h4>absolut</h4>
+    Utilizamos para fazer um posicionamento de div's filhas dentro do pai, com o exemplo acima, onde se quisermos colocar a nossa terceira div encostada no canto de nosso container, usariamos o absolut e colocariamos a quantidade de espaço que desejamos, porem para isso funcionar o container ou a tag pai não pode estar na position static, deve estar em qualquer outra.<br>
+    <br>Um exemplo:<br>
+    <div class="excontainer2">
+        <div class="exdiv4">Primeira Div</div>
+        <div class="exdiv5">Segunda Div</div>
+        <div class="exdiv6">Terceira Div</div>
+    </div>
+    <br>Como foi feito:
+    <p id="exemplo" class="center">Index.html</p>
+    <pre><code>
+        <-div class="excontainer2">
+            <-div class="exdiv4">Primeira Div<-/div>
+            <-div class="exdiv5">Segunda Div<-/div>
+            <-div class="exdiv6">Terceira Div<-/div>
+        <-/div>
+    </code></pre>
+    <mark><sup>obs:</sup>Sem os -.</mark><br>
+    <p id="exemplo" class="center">estilo.css</p>
+    <pre><code>
+        .excontainer2{
+            position: relative;
+            background-color: blue;
+            width: 100%;
+            height: 200px;
+            display: inline-block;
+        }
+        .exdiv4 {
+            position: relative;
+            width: 25%;
+            height: 20px;
+            background-color: yellow;
+            display: inline-block;
+            
+        }
+        .exdiv5 {
+            position: relative;
+            width: 25%;
+            height: 20px;
+            background-color: green;
+            display: inline-block;  
+        }
+        .exdiv6 {
+            position: absolute;
+            left: 200px;
+            top: 50px;
+            width: 25%;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+        }
+    </code></pre>
+    <hr><hr>
+    <h4>sticky</h4>
+    Utilizamos para colar o elemento em algum lagor da nossa tela enquanto fazemos a rolagem do nosso site para baixo, podendo fazer ela ser contida somente dentro da nossa tag pai, no nosso caso o container.<br>
+    <br>Um exemplo:<br>
+    <div class="excontainer3">
+        <div class="exdiv7">Primeira Div</div>
+        <div class="exdiv8">Segunda Div</div>
+        <div class="exdiv9">Terceira Div</div>
+    </div>
+    <br>Como foi feito:
+    <p id="exemplo" class="center">Index.html</p>
+    <pre><code>
+        <-div class="excontainer3">
+            <-div class="exdiv7">Primeira Div<-/div>
+            <-div class="exdiv8">Segunda Div<-/div>
+            <-div class="exdiv9">Terceira Div<-/div>
+        <-div>
+    </code></pre>
+    <mark><sup>obs:</sup>Sem os -.</mark><br>
+    <p id="exemplo" class="center">estilo.css</p>
+    <pre><code>
+        .excontainer3{
+            position: relative;
+            background-color: blue;
+            width: 100%;
+            height: 350px;
+            display: inline-block;
+        }
+        .exdiv7 {
+            position: relative;
+            width: 25%;
+            height: 20px;
+            background-color: yellow;
+            display: inline-block;
+            
+        }
+        .exdiv8 {
+            position: sticky;
+            top: 0;
+            width: 25%;
+            height: 190px;
+            background-color: green;
+            display: inline-block;  
+        }
+        .exdiv9 {
+            position: relative;
+            width: 25%;
+            height: 20px;
+            background-color: red;
+            display: inline-block;
+        }   
+    </code></pre>
+    <hr><hr>
+    <h4>Exemplo prático</h4>
+    <div class="containerexpratico">
+        <img src="../img/fotoexemplo.jpg">
+        <div class="divexpratico">
+            <h2>Centralizado</h2>
+        </div>
+    </div>
+    <br>Como foi feito:
+    <p id="exemplo" class="center">Index.html</p>
+    <pre><code>
+        <-div class="containerexpratico">
+            <-img src="../img/fotoexemplo.jpg">
+            <-div class="divexpratico">
+                <-h2>Centralizado<-/h2>
+            <-/div>
+        <-/div>
+    </code></pre>
+    <mark><sup>obs:</sup>Sem os -.</mark><br>
+    <p id="exemplo" class="center">estilo.css</p>
+    <pre><code>
+        .containerexpratico {
+            position: relative;
+            display: inline-block;
+            height: 400px;
+            width: 100%;
+            z-index: 1;
+        }
+        img {
+            width:100%;
+            opacity: 0.7;
+            
+        }
+        .divexpratico {
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            text-align: center;
+            color: black;
+            z-index: 999;
+        }
+    </code></pre>
     </p>
-
+    <hr>
     <br><br>
     <a class="bt_pag_anetrior center" href="pro_overflow.html"> << Página Anterior</a>
     <a class="bt_prox_pag center" href="pro_float.html">Próxima Página >> </a>
