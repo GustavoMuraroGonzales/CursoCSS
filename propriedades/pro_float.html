@@ -8,7 +8,66 @@
 </head>
 <body>
     <h1 class="center c_red">Propriedade Float</h1>
-
+    <p>
+        Fazer com o que elemento flutue, utilizada para fazer um certo alinhamento de nosso elemento. O float faz com que o nosso elemento se desprenda de nossa div onde está contido. Assim não seguindo mais o influxo do display.<br>
+        Um exemplo:<br>
+        <div class="containerfloat">
+            <img class="fotoexemplofloat" src="../img/fotoexemplo.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, nulla laudantium vel illo odit quasi perspiciatis libero dolore eligendi ipsam omnis minus repudiandae neque nihil exercitationem, quisquam sapiente qui vero.</p>
+        </div>
+        Caso nós quisermos colocar outro elemento dentro de nossa div porem sem seguir esse papel de float ao lado direito, nós devemos utilizar uma outra propriedade que se chama: clear:both; assim limpando a nossa seleção de float e todas as tag's abiao dela voltam a ser da meneira padrão.<br>
+        <hr><hr>
+        <div class="containerdiagramação">
+            <h3>Diagramação</h3>
+            <p>Distribuir os elementos gráficos no espaço limitado da página de forma coerente e esteticamente bonita.</p>
+        </div>
+        <hr><hr>
+        <h4>Exemplo prático</h4>
+        Agora como exemplo prático de nosso aprendizado float vamos fazer um menu estilizado.
+        <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li class="loginex"><a href="#">Login</a></li>
+        </ul>
+        Como foi feito:
+        <p id="exemplo" class="center">Index.html</p>
+        <pre><code>
+            <-ul>
+                <-li><-a href="#">Sobre<-/a><-/li>
+                <-li><-a href="#">Sobre<-/a><-/li>
+                <-li><-a href="#">Sobre<-/a><-/li>
+                <-li class="loginex"><-a href="#">Login<-/a><-/li>
+            <-/ul>
+        </code></pre>
+        <mark><sup>obs:</sup>Sem os -.</mark><br>
+        <p id="exemplo" class="center">estilo.css</p>
+        <pre><code>
+            ul {
+                background: rgb(59, 59, 59);
+                padding: 20px;
+            }
+            li {
+                display: inline-block;
+            }
+            li a {
+                color: aliceblue; 
+                text-decoration: none;
+                padding: 20px;
+            }
+            li a:hover {
+                background-color: #696767;
+                color: black;
+            }
+            .loginex {
+                float: right;
+            }
+            .loginex a:hover {
+                background-color: rgb(175, 121, 226);
+                color: black;
+            }
+        </code></pre>
+    </p>
 
     <br><br>
     <a class="bt_pag_anetrior center" href="pro_position.html"> << Página Anterior</a>
