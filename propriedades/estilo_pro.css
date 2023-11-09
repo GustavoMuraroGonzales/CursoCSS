@@ -428,3 +428,23 @@ img {
     color: black;
     z-index: 999;
 }
+.exoverflow {
+    background-color: #ccc;
+    color: black;
+    height: 110px;
+    display: inline-block;   
+}
+.exoverflowhidden {
+    background-color: #ccc;
+    color: black;
+    height: 110px;
+    display: inline-block; 
+    overflow: hidden;
+}
+.exoverflowscroll {
+    background-color: #ccc;
+    color: black;
+    height: 110px;
+    display: inline-block; 
+    overflow: scroll;
+}

@@ -8,7 +8,59 @@
 </head>
 <body>
     <h1 class="center c_red">Propriedade Overflow</h1>
-
+    <p>
+        Determina o que vai acontecer com o conteudo quando talvez o elemento for menor do que o conteudo que tem nele. Somente usados o overflow quando colocamos a propriedade de height em nosso elemento.<br>
+        Alguns exemplos de aplicação do overflow:<br>
+        <hr>
+        <div class="exoverflow">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi non pariatur suscipit corporis dolores, recusandae, est voluptates accusantium ad cum exercitationem amet laboriosam dicta labore illo quisquam natus libero odio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi nemo, ex ad nisi inventore minima, quod cum cupiditate harum dolor necessitatibus fugiat doloremque pariatur nobis, ea consequuntur blanditiis tempore commodi!</p>
+        </div>
+        <hr><hr>
+        <br>
+        Podemos ver no exemplo acima como ficaria o nosso site caso o nosso elemento tenha que ter um padrão definido e o nosso paragrafo fosse maior, assim ficando cortado o nosso páragrafo, podemos resolver isso usando a propriedade de overflow, que são elas, hidden, visible, auto e scroll.<br>
+        Com o exemplo acima iremos colocar os nossos tipos de overflow para vermos a difença e mlhor aplicação para cada um deles.<br>
+        <h4>visible</h4>
+        O visible é o elemento padrão onde já vem pré selecionado, no caso nessa propiedade overflow: visible ele deixa do jeito que está o nosso exemplo, sendo assim se ele estiver cortado, irá continuar da maneira em que ele está.
+        <hr><hr>
+        <h4>hidden</h4>
+        No overflow:hidden ele irá esconder o parágrafo ou texto que não está dentro de nosso elemento.<br>
+        Como demonstramos abaixo:<br>
+        <hr>
+        <div class="exoverflowhidden">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi non pariatur suscipit corporis dolores, recusandae, est voluptates accusantium ad cum exercitationem amet laboriosam dicta labore illo quisquam natus libero odio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi nemo, ex ad nisi inventore minima, quod cum cupiditate harum dolor necessitatibus fugiat doloremque pariatur nobis, ea consequuntur blanditiis tempore commodi!</p>
+        </div>
+        <hr><hr>
+        <h4>scroll</h4>
+        No overflow:scroll ele habilita uma barra de scroll que faz com que possamos ver os nosso paragrafos selecionados no espaço definido pelo nosso elemtento.<br>
+        Como demonstramos no exemplo abaixo:<br>
+        <hr>
+        <div class="exoverflowscroll">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi non pariatur suscipit corporis dolores, recusandae, est voluptates accusantium ad cum exercitationem amet laboriosam dicta labore illo quisquam natus libero odio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi nemo, ex ad nisi inventore minima, quod cum cupiditate harum dolor necessitatibus fugiat doloremque pariatur nobis, ea consequuntur blanditiis tempore commodi!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ullam sequi totam. Nesciunt dignissimos officia eius praesentium? Voluptatem repudiandae ducimus ad fugiat, praesentium voluptatum error placeat deleniti eum necessitatibus nisi?</p>
+        </div>
+        <hr><hr>
+        <h4>auto</h4>
+        No overflow:auto ele vai fazer a seleção automaticamente entre o visible em que cabe todo o nosso paragrafo dentro de nosso elemento ou irá colocar em scroll, isso dependendo do tamanho de nossos paragrafos e de nossos elementos.
+        <hr><hr>
+        Com a propriedade overflow nós podemos tambem retirar as funções de scrool tanto x ou y de nossa página. Para fazermos isso utilizamos a seguinte tag:<br>
+        Para o Eixo X (horizontal)
+        <p id="exemplo" class="center">estilo.css</p>
+        <pre><code>
+            body {
+                overflow-x: hidden;
+            }
+        </code></pre>
+        Para o Eixo Y (vertical)
+        <p id="exemplo" class="center">estilo.css</p>
+        <pre><code>
+            body {
+                overflow-y: hidden;
+            }
+        </code></pre>
+    </p>
 
     <br><br>
     <a class="bt_pag_anetrior center" href="pro_display.html"> << Página Anterior</a>
