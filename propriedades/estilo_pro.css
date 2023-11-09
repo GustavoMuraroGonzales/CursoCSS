@@ -448,3 +448,55 @@ img {
     display: inline-block; 
     overflow: scroll;
 }
+.fotoexemplofloat {
+    width: 200px;
+
+}
+.containerfloat {
+    overflow:auto;
+
+}
+.containerfloat img {
+    float: left;
+    margin-right: 20px;
+}
+.containerdiagramação {
+    background-color: aliceblue;
+    border: 1px solid red;
+    width:540px;
+    height:130px;
+    display: inline-block;
+}
+.containerdiagramação h3 {
+    background-color: red;
+    color:aliceblue;
+    padding: 5px;
+    position: relative;
+    top:0px;
+    display: inline-block;
+    width:530px;
+    height: 25px;
+}
+ul {
+    background: rgb(59, 59, 59);
+    padding: 20px;
+}
+li {
+    display: inline-block;
+}
+li a {
+    color: aliceblue; 
+    text-decoration: none;
+    padding: 20px;
+}
+li a:hover {
+    background-color: #696767;
+    color: black;
+}
+.loginex {
+    float: right;
+}
+.loginex a:hover {
+    background-color: rgb(175, 121, 226);
+    color: black;
+}
