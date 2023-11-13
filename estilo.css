@@ -7,6 +7,7 @@
 }
 body {
   background-color: antiquewhite;
+  position: relative;
 }
 a.botao_inicial {
   background-color: #333;
@@ -78,4 +79,111 @@ li.dropdown{
 }
 .dropdown:hover .dropdown-content {
   display: block;
+}
+#exgradiente {
+  height: 250px;
+}@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+.center {
+  text-align: center;
+}
+.c_red {
+  color: red;
+}
+body {
+  background-color: antiquewhite;
+  position: relative;
+}
+a.botao_inicial {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 25px;
+  color: aliceblue;
+  text-decoration: none;
+  align-self: center;
+  display:block;
+  width: 150px;
+}
+.botao_inicial:hover{
+  background-color: #575555;
+  padding: 5%;
+}
+.bt_pag_anetrior {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 25px;
+  color: aliceblue;
+  text-decoration: none;
+  align-self: center;
+  width: 150px;
+  text-align: center;
+  float:left;
+  margin-left: 35px;
+}
+.bt_pag_anetrior:hover {
+  background-color: #575555;
+  padding: 4%;
+}
+#exemplo {
+  background-color: #ccc;
+}
+ul {
+  background-color: #333;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a, .dropbtn {
+  color: white;
+  display: inline-block;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn{
+  background-color: blue;
+  padding: 16px 18px;
+}
+li.dropdown{
+  display:  inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 150px;
+}
+.dropdown-content a {
+  color:black;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  color:aliceblue
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#exgradiente {
+  height: 250px;
+  width: 100%;
+  background-image: linear-gradient( blue, red );
+}
+#exgradiente2 {
+  height: 250px;
+  width: 100%;
+  background-image: linear-gradient(to left, blue, red );
+}
+#exgradiente3 {
+  height: 250px;
+  width: 100%;
+  background-image: radial-gradient( blue, red );
+}
+#exgradiente4 {
+  height: 250px;
+  width: 100%;
+  background-image: radial-gradient( blue 50%, red  );
 }
