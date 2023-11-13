@@ -8,7 +8,61 @@
 </head>
 <body>
     <h1 class="center c_red">Propriedade Opacity</h1>
+    <p>
+        Propriedade de transparencia, utilizamios bastante para formatação de imagens em nossos projetos.<br>
+        <img class="img1" src="https://picsum.photos/200">
+        <img class="img2" src="https://picsum.photos/200">
+        <img class="img3" src="https://picsum.photos/200">
+        Para utilizarmos a propriedade utilizamos o código da seguinte maneira, colocamos ele em casa decimais que seria de 0.1 até 1.0 que no caso seriam respectivamente:<br>
+        - 0.1 = 10%;<br>
+        - 0.2 = 20%;<br>
+        - 0.3 = 30%;<br>
+        - 0.4 = 40%;<br>
+        - 0.5 = 50%;<br>
+        - 0.6 = 60%;<br>
+        - 0.7 = 70%;<br>
+        - 0.8 = 80%;<br>
+        - 0.9 = 90%;<br>
+        - 1.0 = 100%;<br>
 
+        Podemos tambem utilizar a propriedade opacity para fazermos botoes que quando passamos o mouse em cima ele traz um certo elemento visual.<br>
+        Exemplo:<br><br>
+        <a href="teste.html" class="exbtopacity">Botão</a><br><br>
+        Como foi feito:<br>
+        <p id="exemplo" class="center">index.html</p>
+        <pre><code>
+            <-a href="teste.html" class="exbtopacity">Botão<-/a>
+        </code></pre>
+        <mark><sup>obs:</sup>Sem os -.</mark><br>
+        <p id="exemplo" class="center">estilo.css</p>
+        <pre><code>
+            a.exbtopacity {
+                padding: 10px;
+                background-color: blue;
+                color: aliceblue;
+                text-align: center;
+                text-decoration: none;
+            }
+            a.exbtopacity:hover {
+                opacity: 0.7;
+            }
+        </code></pre>
+        A transparencia ela pega todos os elementos que estão dentro de determinada tag, como por exemplo:<br><br>
+        <div class="extransparente">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, natus non laudantium temporibus ex obcaecati nihil quas quo doloribus, dolores porro distinctio molestias eius numquam, animi vero tenetur perferendis unde!
+        </div>
+        O nosso código ficou da seguinte maneira, criamos uma div extransparente que no caso tem um p lorem nela e fizemos o seguinte código e nosso estilo.css:<br>
+        <p id="exemplo" class="center">estilo.css</p>
+        <pre><code>
+            .extransparente {
+                padding: 30px;
+                background-color: rgb(29, 80, 80);
+                color:aliceblue;
+                opacity: 0.5;
+            }
+        </code></pre>
+        Deixando todo a nossa tag div com a opacidade de 0.5, 
+    </p>
 
     <br><br>
     <a class="bt_pag_anetrior center" href="pro_float.html"> << Página Anterior</a>
