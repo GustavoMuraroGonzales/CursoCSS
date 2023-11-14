@@ -525,3 +525,18 @@ a.exbtopacity:hover {
     color:aliceblue;
     opacity: 0.5;
 }
+.exemploshadow {
+    text-shadow: 2px 2px red;
+}
+.exemploshadow1 {
+    text-shadow: 2px 2px 5px blue;
+}
+.exemploshadow2 {
+    text-shadow: 0 0 10px yellow, 2px 2px 5px green;
+}
+.exbxshadow {
+    width: 100%;
+    height: 150px;
+    background-color: #575555;
+    box-shadow: 5px 5px 5px gray;
+}
