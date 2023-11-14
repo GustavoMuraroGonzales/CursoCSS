@@ -8,7 +8,52 @@
 </head>
 <body>
     <h1 class="center c_red">Efeitos de Texto</h1>
-
+    <p>
+        Utilizamos esse efeito para colocar em nosso texto quando o texto é maio do que o nosso elemento, como no exemplo abaixo que temos um card e o nosso testo é maior que o nosso elemento.<br>
+        <div class="card">
+            <img src="/img/fotoexemplo.jpg" style="max-width: 100%;">
+            <h2 style="margin-bottom:0;padding-bottom: 0 ;" class="reduzido">Isso é o titulo  grande de um card !!</h2>
+            <p class="reduzido">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus nisi mollitia sint, iure doloribus quaerat dolorem velit quos aut voluptatem fugit enim suscipit, corporis voluptas perferendis nostrum quam sequi.
+            </p>
+        </div>
+        Como foi feito:
+        <p id="exemplo" class="center">Index.html</p>
+        <pre><code>
+    <-div class="card">
+        <-img src="/img/fotoexemplo.jpg" style="max-width: 100%;">
+        <-h2 style="margin-bottom:0;padding-bottom: 0 ;" 
+            class="reduzido">Isso é o titulo  grande de um card !!<-/h2>
+        <-p class="reduzido">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Cupiditate natus nisi mollitia sint, iure doloribus 
+            quaerat dolorem velit quos aut voluptatem fugit enim 
+            suscipit, corporis voluptas perferendis nostrum quam sequi.
+        <-/p>
+    <-/div>
+        </code></pre>
+        <mark><sup>obs:</sup>Sem os -.</mark><br>
+        <p id="exemplo" class="center">Estilo.css</p>
+        <pre><code>
+        .card {
+            text-align: center;
+            background-color: aliceblue;
+            width:40%;
+            height: auto;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 
+                                     0 6px 20px 0 rgba(0,0,0,0.19)
+          }
+          .reduzido {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-bottom: 30px;
+          }
+          .card:hover .reduzido {
+            white-space: normal;
+          }
+        </code></pre>
+    </p>
 
 <br><br>
 <a  class="botao_inicial center" href="../index.html">VOLTAR INICIO

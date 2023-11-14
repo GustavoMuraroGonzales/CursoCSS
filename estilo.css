@@ -187,3 +187,20 @@ li.dropdown{
   width: 100%;
   background-image: radial-gradient( blue 50%, red  );
 }
+.card {
+  text-align: center;
+  background-color: aliceblue;
+  width:40%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+  
+}
+.reduzido {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 30px;
+}
+.card:hover .reduzido {
+  white-space: normal;
+}
