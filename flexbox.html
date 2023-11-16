@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1 class="center c_red">Flexbox</h1>
+    <p>Usado para deixar o nosso site responsivel, sendo mais simples, usamos para que náo seja necessário usarmos, mas para funcionar devemos sempre colocar em nosso código como display:flex. </p>
+    <h3>Tipos de Flexbox que temos:</h3>
+    <h4>Flex-direction</h4>
+    <p>Temos vários tipoe de directions que quermos, podendo coloca em colunas (column) ou linhas (Row). Como os exemplos abaixo:</p>
+    <h5>Column</h5>
+    <div class="exflexpai">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    Como foi feito:
+    <p id="exemplo" class="center">index.html</p>
+    <pre><code>
+        <-div class="exflexpai">
+            <-div>1<-/div>
+            <-div>2<-/div>
+            <-div>3<-/div>
+        <-/div>
+    </code></pre>
+    <mark><sup>obs:</sup>Sem os -.</mark><br>
+    <p id="exemplo" class="center">estilo.css</p>
+    <pre><code>
+        .exflexpai {
+            background-color: blue;
+            display: flex;
+            flex-direction:  column;
+          
+          }
+          .exflexpai div {
+            background: white;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 20px;
+            text-align: center;
+          }
+    </code></pre>
+    <hr><hr>
+    <h5>Rows</h5>
+    <div class="exflexpai2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p id="exemplo" class="center">index.html</p>
+    <pre><code>
+        <-div class="exflexpai2">
+            <-div>1</-div>
+            <-div>2<-/div>
+            <-div>3<-/div>
+        <-/div>
+    </code></pre>   
+    <mark><sup>obs:</sup>Sem os -.</mark><br>
+    <p id="exemplo" class="center">estilo.css</p>
+    <pre><code>
+        .exflexpai2 {
+            background-color: blue;
+            display: flex;
+            flex-direction:  row;
+          
+          }
+          .exflexpai2 div {
+            background: white;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 20px;
+            text-align: center;
+          }
+    </code></pre>
+    <hr><hr>
+    <h4>Flex-wrap</h4>
+    <p>Quando as nossas div`s filhas atingem o tamanho de nossa página o elemento faz com que eles continuem dentro da div pai, porem na linha de baixo, como o exemplo:</p>
+    <div class="exflexpai3">
+        <div>1</div>
+        <div>2</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <p id="exemplo" class="center">index.html</p>
+    <pre><code>
+        <-div class="exflexpai3">
+            <-div>1<-/div>
+            <-div>2<-/div>
+            <-div>4<-/div>
+            <-div>5<-/div>
+            <-div>6<-/div>
+            <-div>7<-/div>
+            <-div>8<-/div>
+            <-div>9<-/div>
+            <-div>10<-/div>
+        <-/div>
+    </code></pre>
+    <mark><sup>obs:</sup>Sem os -.</mark><br>
+    <p id="exemplo" class="center">estilo.css</p>
+    <pre><code>
+        .exflexpai3 {
+            background-color: blue;
+            display: flex;
+            flex-direction:  row;
+            flex-wrap: wrap;
+          
+          }
+          .exflexpai3 div {
+            background: white;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 30px;
+            text-align: center;
+          }
+    </code></pre>
+    <hr><hr>
+    <h4>Flex-flow</h4>
+    <p>Usado para colocarmos as duas propriedades acima em uma só, em vez de colocar flex-direction e flex-wrap, usamos flex-flow: row wrap. Fazendo com o que o nosso código fique mais curto porem tenha o mesmo propósito que o código grande.</p>
+    <hr><hr>
+    <h4>Justify-content</h4>
+    <p>Faz com que os itens de nossa div, vão diretamente para um local indicado, assim facilitando o nosso código. Nós temos vários tipos de justifty-contents, onde cada um tem uma ação específica.</p>
+    <h5>Justify-content: flex-left</h5>
+    <p>Coloca os nossos elementos para a esquerda de nossa página, sendo esse o Justify-content padrão.</p>
+    <h5>Justify-content: flex-end</h5>
+    <p>Coloca os nossos elementos para a direita de nossa página.</p>
+    <h5>Justify-content: center</h5>
+    <p>Centraliza os nossos itens no meio da página/elementopai</p>
+    <h5>Justify-content: space-between</h5>
+    <p>Adiciona um espaço entre as nossa div's filhas.</p>
+    <h5>Justify-content: space-around</h5>
+    <p>Adiciona um espaçamento uniforme em volta de cada div filha.</p>
+    <p>Centraliza os nossos itens no meio da página/elementopai</p>
+    <hr><hr>
+    <h4>Align-items</h4>
+    <p>Usado para colocarmos posição em nossos elemento na direção vertical.</p>
+    <h5>Align-items: Stretch</h5>
+    <p>Estica o nosso elemento na direção vertical. Como exemplo:</p>
+    <div class="exflexpai4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h5>Align-items: center</h5>
+    <p>Centraliza o nosso elemento na vertical</p>
+    <h5>Align-items: flex-start</h5>
+    <p>Coloca o nosso elemento na parte de cima.</p>
+    <h5>Align-items: flex-end</h5>
+    <p>Coloca o nosso elemento na parte de baixo.</p>
+    <hr><hr>
+    <h4>Align-content</h4>
+    <p>Utilizado para alinhar todos os nosso itens filhos de uma maneira mais ordenada e bonita de ver.</p>
+    <h4>Flex-grow</h4>
+    <p>Faz as divisões de nossas div's de uma forma uniforme.  </p>
+<br><br>
+<a  class="botao_inicial center" href="../index.html">VOLTAR INICIO
+    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg> 
+</a>
+</body>
+</html>
