@@ -228,3 +228,59 @@ li.dropdown{
 .card:hover .reduzido {
   white-space: normal;
 }
+/* Inicio Flexbox */
+.exflexpai {
+  background-color: blue;
+  display: flex;
+  flex-direction:  column;
+
+}
+.exflexpai div {
+  background: white;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 20px;
+  text-align: center;
+}
+.exflexpai2 {
+  background-color: blue;
+  display: flex;
+  flex-direction:  row;
+
+}
+.exflexpai2 div {
+  background: white;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 20px;
+  text-align: center;
+}
+.exflexpai3 {
+  background-color: blue;
+  display: flex;
+  flex-direction:  row;
+  flex-wrap: wrap;
+
+}
+.exflexpai3 div {
+  background: white;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 30px;
+  text-align: center;
+}
+.exflexpai4 {
+  background-color: blue;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  height: 250px;
+}
+.exflexpai4 div {
+  background: white;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 30px;
+  text-align: center;
+}
